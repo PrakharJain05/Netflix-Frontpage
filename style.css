@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.2;
+}
+:root {
+  --primaryColor: #e50914;
+}
+.banner_wrap {
+  background: url(./assets/IN-en-20200817-popsignuptwoweeks-perspective_alpha_website_small.png)
+    center/cover no-repeat;
+  padding: 25px 0;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  border-bottom: 8px rgb(34, 34, 34) solid;
+}
+.banner_wrap::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.6)
+  );
+  z-index: -1;
+}
+.banner_container {
+  max-width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  position: relative;
+}
+.logo {
+  display: inline-block;
+  height: 45px;
+}
+.logo img {
+  height: 36px;
+}
+.sign_in_btn {
+  display: inline-block;
+  padding: 8px 18px;
+  color: white;
+  background: var(--primaryColor);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.banner_content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 45px);
+  text-align: center;
+}
+.title_main {
+  font-size: 3.6rem;
+}
+.banner_content_inner h3 {
+  font-size: 1.6rem;
+  margin: 20px 0;
+  font-weight: 400;
+}
+.banner_content_inner h4 {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  font-weight: 400;
+}
+.subscription_form input {
+  height: 70px;
+  border: 0;
+}
+.subscription_form input[type="email"] {
+  padding: 10px 15px;
+  width: 65%;
+  font-size: 1.2rem;
+  float: left;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.subscription_form input[type="submit"] {
+  width: 35%;
+  background: var(--primaryColor);
+  color: white;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+.subscription_form input[type="submit"]:hover {
+  background: #f40612;
+}
+/* Responsive */
+
+@media screen and (max-width: 548px) {
+  .banner_wrap {
+    height: 75vh;
+  }
+  .logo img {
+    height: 24px;
+  }
+  .title_main {
+    font-size: 1.6rem;
+  }
+  .banner_content_inner h3 {
+    font-size: 1.2rem;
+  }
+  .banner_content_inner h4 {
+    font-size: 1rem;
+  }
+  .subscription_form input[type="email"] {
+    width: 100%;
+    height: 50px;
+    font-size: 0.9rem;
+    border-radius: 3px;
+  }
+  .subscription_form input[type="submit"] {
+    width: 40%;
+    height: 50px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    margin: 20px 0;
+  }
+}
+@media screen and (min-width: 548px) and (max-width: 768px) {
+  .logo img {
+    height: 30;
+  }
+  .title_main {
+    font-size: 3rem;
+  }
+  .subscription_form input[type="email"] {
+    width: 100%;
+    height: 50px;
+    font-size: 0.9rem;
+    border-radius: 3px;
+  }
+  .subscription_form input[type="submit"] {
+    width: 40%;
+    height: 50px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    margin: 20px 0;
+  }
+}
+
+/* card */
+.card_wrap {
+  padding: 70px 45px;
+  background: black;
+  border-bottom: 8px rgb(34, 34, 34) solid;
+}
+.card_container {
+  display: flex;
+  max-width: 1102px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card_container_text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 50px;
+  z-index: 3;
+  width: 50%;
+}
+.card_container_text h1 {
+  font-size: 3rem;
+}
+.card_container_text h2 {
+  font-size: 1.4rem;
+  margin: 20px 0;
+  font-weight: 400;
+}
+.card_container_image {
+  float: right;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.card_image {
+  position: relative;
+  width: 100%;
+}
+.card_container_image img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+.card_container_image video {
+  width: 100%;
+  height: auto;
+}
+.card_video {
+  position: absolute;
+  top: 21%;
+  left: 13%;
+}
+/* Responsive */
+@media screen and (min-width: 548px) and (max-width: 948px) {
+  .card_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .card_container_text {
+    padding-right: 0;
+    width: 100%;
+  }
+  .card_container_image {
+    width: 427px;
+    height: 380px;
+  }
+}
+@media screen and (max-width: 548px) {
+  .card_wrap {
+    padding: 25px 10px;
+  }
+  .card_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .card_container_text {
+    padding-right: 0;
+    width: 100%;
+  }
+  .card_container_image {
+    width: 100%;
+    height: auto;
+  }
+  .card_container_text h1 {
+    font-size: 1.4rem;
+  }
+  .card_container_text h2 {
+    font-size: 0.9rem;
+  }
+}
+
+/* FAQ */
+.faq_section {
+  padding: 70px 45px;
+  background: black;
+  border-bottom: 8px rgb(34, 34, 34) solid;
+}
+.faq_container {
+  display: flex;
+  max-width: 1102px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.faq_title {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+.faq_list {
+  display: list-item;
+  list-style: none;
+  text-align: left;
+  width: 75%;
+  margin: 2em auto;
+  max-width: 815px;
+  position: relative;
+}
+.faq_list button {
+  display: inline;
+  text-align: left;
+  width: 100%;
+  font-size: 1.4rem;
+  background: #303030;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  margin-bottom: 1px;
+  font-weight: 400;
+  position: relative;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  position: relative;
+}
+.faq_list button i {
+  position: absolute;
+  right: 1em;
+  top: 30%;
+}
+.faq_answer {
+  display: none;
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  /* display: block; */
+  text-align: left;
+  background: #303030;
+  list-style-type: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.faq_answer span {
+  display: inline-block;
+  padding: 1.2em;
+}
+.register {
+}
+.register h4 {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  font-weight: 400;
+}
+.register input {
+  height: 50px;
+  border: 0;
+}
+.register input[type="email"] {
+  padding: 10px 15px;
+  width: 65%;
+  font-size: 0.9rem;
+  border-radius: 3px;
+}
+.register input[type="submit"] {
+  width: 35%;
+  background: var(--primaryColor);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 648px) {
+  .faq_section {
+    padding: 0;
+  }
+  .faq_title {
+    font-size: 1.4rem;
+  }
+  .faq_list {
+    width: 100%;
+  }
+  .faq_list button {
+    font-size: 0.9rem;
+  }
+  .register input[type="email"] {
+    width: 85%;
+  }
+  .register input[type="submit"] {
+    margin: 20px 0;
+    width: 45%;
+  }
+}
+
+/* footer */
+
+.footer {
+  padding: 70px 40px;
+  background: black;
+  color: #757575;
+}
+.footer_container {
+  display: block;
+  padding-bottom: 20px;
+  min-width: 190px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer_top {
+  margin-bottom: 30px;
+}
+.footer_top a {
+  color: #757575;
+}
+.footer_list li {
+  padding: 0;
+  margin-bottom: 16px;
+  display: inline-block;
+  min-width: 100px;
+  width: 24%;
+  padding-right: 12px;
+  vertical-align: top;
+  margin-left: 0;
+  font-size: 13px;
+}
+.footer_list li a {
+  color: #757575;
+}
+.language_select {
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 1em;
+  color: #757575;
+}
+.language_select select {
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #333;
+  color: #999;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 2px;
+  width: 100%;
+}
+.footer_bottom {
+  font-size: 13px;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 548px) {
+  .footer_list li {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 548px) and (max-width: 948px) {
+  .footer_list li {
+    width: 32%;
+  }
+}
