@@ -69,6 +69,9 @@
 .title_main {
   font-size: 3.6rem;
 }
+.banner_content_inner {
+  width: 700px;
+}
 .banner_content_inner h3 {
   font-size: 1.6rem;
   margin: 20px 0;
@@ -104,6 +107,7 @@
 .subscription_form input[type="submit"]:hover {
   background: #f40612;
 }
+
 /* Responsive */
 
 @media screen and (max-width: 548px) {
@@ -115,6 +119,9 @@
   }
   .title_main {
     font-size: 1.6rem;
+  }
+  .banner_content_inner {
+    width: auto;
   }
   .banner_content_inner h3 {
     font-size: 1.2rem;
@@ -145,6 +152,9 @@
   }
   .title_main {
     font-size: 3rem;
+  }
+  .banner_content_inner {
+    width: auto;
   }
   .subscription_form input[type="email"] {
     width: 100%;
