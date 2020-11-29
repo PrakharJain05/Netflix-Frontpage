@@ -1,0 +1,27 @@
+{
+  "short_name": "netflix",
+  "name": "netflix",
+  "display": "standalone",
+  "background_color": "#000",
+  "description": "Netflix front page clone",
+  "theme_color": "#000",
+  "start_url": "index.html",
+  "icons": [
+    {
+      "src": "/assets/netflixFavicon.png",
+      "type": "image/png",
+      "sizes": "64x64",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/netflix192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/netflix512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

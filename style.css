@@ -317,7 +317,7 @@
   color: white;
   position: relative;
 }
-.faq_list button i {
+.faq_ques span {
   position: absolute;
   right: 1em;
   top: 30%;
