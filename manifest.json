@@ -1,6 +1,6 @@
 {
-  "short_name": "netflix",
-  "name": "netflix",
+  "short_name": "Netflix",
+  "name": "Netflix",
   "display": "standalone",
   "background_color": "#000",
   "description": "Netflix front page clone",
